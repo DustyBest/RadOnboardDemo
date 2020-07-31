@@ -1,3 +1,17 @@
-<p>landing works!</p>
-<!-- <h3>{{this.intakeService.newUser.value[is21]}}</h3> -->
-<button routerLink="../onboard-component" mat-raised-button>Go Back</button>
+<h3>Our new user has selected the following</h3>
+<h3>{{this.intakeService.newUser.value.is21}}</h3>
+<h3>{{this.intakeService.newUser.value.beers}}</h3>
+<h3>{{this.intakeService.newUser.value.entertainment}}</h3>
+<h3>{{this.intakeService.newUser.value.music}}</h3>
+<h3>{{this.intakeService.newUser.value.wines}}</h3>
+<h3>{{this.intakeService.newUser.value.isPetFriendly}}</h3>
+<button routerLink="../onboard" mat-raised-button>Go Back</button>
+
+<!-- value:
+beers: "ipa"
+entertainment: "games"
+is21: "Yes 21"
+isPetFriendly: ""
+music: "reggae"
+wines: "sparkling"
+ -->

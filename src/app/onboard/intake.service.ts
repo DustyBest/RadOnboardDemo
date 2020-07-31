@@ -5,7 +5,17 @@ import { Router } from "@angular/router"
   providedIn: 'root'
 })
 export class IntakeService {
-  newUser = { value: 'abc' };
+  newUser = { 
+    value: {
+      beers: "",
+      entertainment: "",
+      is21: "",
+      isPetFriendly: "",
+      music: "",
+      wines: ""
+    } 
+  };
+  
 
   sayHi(){
     console.log("intake service working")

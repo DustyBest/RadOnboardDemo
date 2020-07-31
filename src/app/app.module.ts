@@ -15,6 +15,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 
@@ -22,7 +23,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
   declarations: [
     AppComponent,
     OnboardComponent,
-    LandingComponent
+    LandingComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
