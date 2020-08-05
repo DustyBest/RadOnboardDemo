@@ -16,6 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -37,7 +38,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     MatInputModule,
     MatButtonModule,
     MatRadioModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatIconModule   
   ],
   providers: [
     IntakeService
