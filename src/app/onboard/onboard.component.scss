@@ -9,4 +9,35 @@
 .mat-radio-button ~ .mat-radio-button {
     margin-left: 16px;
     margin-bottom: 5px;
-  }
+}
+
+mat-button-toggle-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    border: none;
+}
+
+mat-button-toggle{
+    margin: 5px;
+}
+.mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle{
+    border-left: none;
+}
+
+.preferenceSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skipNextBtns {
+    display: flex;
+}
+.onboard-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: beige;
+}

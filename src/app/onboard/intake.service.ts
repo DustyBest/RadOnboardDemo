@@ -7,33 +7,33 @@ import { Router } from "@angular/router"
 export class IntakeService {
   newUser = { 
     value: {
-      beers: "",
-      entertainment: "",
-      is21: "",
-      isPetFriendly: "",
-      music: "",
-      wines: ""
+      brew: "",
+      wine: "",
+      food: "",
+      occasion: ""
     } 
   };
   
 
   sayHi(){
-    console.log("intake service working")
+    console.log(this.newUser.value)
+  }
+  updateBrew(brew){
+    this.newUser.value.brew = brew;
+  }
+  updateWine(wine){
+    this.newUser.value.wine = wine;
+  }
+  updateFood(food){
+    this.newUser.value.food = food;
+  }
+  updateOccasion(occasion){
+    this.newUser.value.occasion = occasion;
   }
 
-  onSubmit(newUser){
-    this.newUser = { 
-      value: {
-        beers: "",
-        entertainment: "",
-        is21: "",
-        isPetFriendly: "",
-        music: "",
-        wines: ""
-      } 
-    }
-    this.newUser = newUser
-    console.log(newUser)
+
+  onSubmit(){
+    console.log(this.newUser)
     this.router.navigate(['landing'])
   }
 

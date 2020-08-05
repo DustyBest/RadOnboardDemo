@@ -1,4 +1,76 @@
-  <mat-vertical-stepper [linear]="isLinear" #stepper>
+<div class="onboard-container">
+  <div class="preferenceSelect" id="brew" *ngIf="this.view==='brew'">
+    <h2>Brew Preference?</h2>
+    <mat-button-toggle-group>
+      <mat-button-toggle mat-raised-button (click)="this.intakeService.updateBrew('light')">Light</mat-button-toggle>
+      <mat-button-toggle mat-raised-button (click)="this.intakeService.updateBrew('amber')">Amber</mat-button-toggle>
+      <mat-button-toggle mat-raised-button (click)="this.intakeService.updateBrew('dark')">Dark</mat-button-toggle>
+    </mat-button-toggle-group>
+      <div class="skipNextBtns">       
+      <button mat-raised-button (click)="this.intakeService.sayHi()">Skip</button>
+      <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
+      (click)="this.view='wine'">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="preferenceSelect" id="wine" *ngIf="this.view==='wine'">
+    <h2>Wine Preference?</h2>
+    <mat-button-toggle-group>
+      <mat-button-toggle mat-raised-button (click)="this.intakeService.updateWine('red')">Red</mat-button-toggle>
+      <mat-button-toggle mat-raised-button (click)="this.intakeService.updateWine('white')">White</mat-button-toggle>
+      <mat-button-toggle mat-raised-button (click)="this.intakeService.updateWine('sparkling')">Sparkling</mat-button-toggle>
+    </mat-button-toggle-group>
+    <div class="skipNextBtns">
+      <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
+      (click)="this.view='brew'">
+        <mat-icon>chevron_left</mat-icon></button>
+      <button mat-raised-button (click)="this.intakeService.sayHi()">Skip</button>
+      <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
+      (click)="this.view='food'">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="preferenceSelect" id="food" *ngIf="this.view==='food'">
+    <h2>Food Preference?</h2>
+    <mat-button-toggle-group>
+      <mat-button-toggle mat-raised-button (click)="this.intakeService.updateFood('pub grub')">Pub Grub</mat-button-toggle>
+      <mat-button-toggle mat-raised-button (click)="this.intakeService.updateFood('thai')">Thai</mat-button-toggle>
+      <mat-button-toggle mat-raised-button (click)="this.intakeService.updateFood('gourmet')">Gourmet</mat-button-toggle>
+    </mat-button-toggle-group>
+    <div class="skipNextBtns">
+      <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
+      (click)="this.view='wine'">
+        <mat-icon>chevron_left</mat-icon></button>
+      <button mat-raised-button (click)="this.intakeService.sayHi()">Skip</button>
+      <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
+      (click)="this.view='occasion'">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="preferenceSelect" id="occasion" *ngIf="this.view==='occasion'">
+    <h2>Occasion Preference?</h2>
+    <mat-button-toggle-group>
+      <mat-button-toggle mat-raised-button (click)="this.intakeService.updateOccasion('trivia night')">Trivia Night</mat-button-toggle>
+      <mat-button-toggle mat-raised-button (click)="this.intakeService.updateOccasion('sports')">Sports</mat-button-toggle>
+      <mat-button-toggle mat-raised-button (click)="this.intakeService.updateOccasion('tasting rooms')">Tasting Rooms</mat-button-toggle>
+      <mat-button-toggle mat-raised-button (click)="this.intakeService.updateOccasion('games')">Games</mat-button-toggle>
+    </mat-button-toggle-group>
+    <div class="skipNextBtns">
+      <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
+      (click)="this.view='food'">
+        <mat-icon>chevron_left</mat-icon></button>
+      <button mat-raised-button (click)="this.intakeService.onSubmit()">Finish</button>
+      <button mat-icon-button color="primary" aria-label="Button with a right chevron icon">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- <mat-vertical-stepper [linear]="isLinear" #stepper>
     <mat-step [stepControl]="userFormGroup">
       <form [formGroup]="userFormGroup">
         <ng-template matStepLabel>Are you 21 years or older?</ng-template>
@@ -99,4 +171,4 @@
       </div>
     </mat-step>
   </mat-vertical-stepper>
-  
+   -->
