@@ -27,4 +27,9 @@ export class OnboardComponent implements OnInit {
     };
     this.intakeService.sayHi();
   }
+  skip(skipFrom, skipTo){
+    this.intakeService.newUser.value[skipFrom] = '';
+    this.view = skipTo
+    console.log(this.intakeService.newUser.value)
+  }
 }

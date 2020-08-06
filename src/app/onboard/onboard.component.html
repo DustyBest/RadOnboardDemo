@@ -7,7 +7,7 @@
       <mat-button-toggle mat-raised-button (click)="this.intakeService.updateBrew('dark')">Dark</mat-button-toggle>
     </mat-button-toggle-group>
       <div class="skipNextBtns">       
-      <button mat-raised-button (click)="this.intakeService.sayHi()">Skip</button>
+      <button mat-raised-button (click)="this.skip('brew', 'wine')">Skip</button>
       <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
       (click)="this.view='wine'">
         <mat-icon>chevron_right</mat-icon>
@@ -25,7 +25,7 @@
       <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
       (click)="this.view='brew'">
         <mat-icon>chevron_left</mat-icon></button>
-      <button mat-raised-button (click)="this.intakeService.sayHi()">Skip</button>
+      <button mat-raised-button (click)="this.skip('wine', 'food')">Skip</button>
       <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
       (click)="this.view='food'">
         <mat-icon>chevron_right</mat-icon>
@@ -43,7 +43,7 @@
       <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
       (click)="this.view='wine'">
         <mat-icon>chevron_left</mat-icon></button>
-      <button mat-raised-button (click)="this.intakeService.sayHi()">Skip</button>
+      <button mat-raised-button (click)="this.skip('food', 'occasion')">Skip</button>
       <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
       (click)="this.view='occasion'">
         <mat-icon>chevron_right</mat-icon>

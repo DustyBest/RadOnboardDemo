@@ -16,7 +16,7 @@ export class IntakeService {
   
 
   sayHi(){
-    console.log(this.newUser.value)
+    console.log('hi')
   }
   updateBrew(brew){
     this.newUser.value.brew = brew;
