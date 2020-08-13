@@ -1,5 +1,5 @@
 <div class="onboard-container">
-  <div class="preferenceSelect" id="brew" *ngIf="this.view==='brew'">
+  <div class="preferenceSelect" id="brew" *ngIf="this.view==='brewPreferences'">
     <h2>Brew Preference?</h2>
     <mat-button-toggle-group>
       <mat-button-toggle mat-raised-button (click)="this.intakeService.updateBrew('light')">Light</mat-button-toggle>
@@ -7,14 +7,14 @@
       <mat-button-toggle mat-raised-button (click)="this.intakeService.updateBrew('dark')">Dark</mat-button-toggle>
     </mat-button-toggle-group>
       <div class="skipNextBtns">       
-      <button mat-raised-button (click)="this.skip('brew', 'wine')">Skip</button>
+      <button mat-raised-button (click)="this.skip('brewPreferences', 'winePreferences')">Skip</button>
       <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
-      (click)="this.view='wine'">
+      (click)="this.view='winePreferences'">
         <mat-icon>chevron_right</mat-icon>
       </button>
     </div>
   </div>
-  <div class="preferenceSelect" id="wine" *ngIf="this.view==='wine'">
+  <div class="preferenceSelect" id="wine" *ngIf="this.view==='winePreferences'">
     <h2>Wine Preference?</h2>
     <mat-button-toggle-group>
       <mat-button-toggle mat-raised-button (click)="this.intakeService.updateWine('red')">Red</mat-button-toggle>
@@ -23,16 +23,16 @@
     </mat-button-toggle-group>
     <div class="skipNextBtns">
       <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
-      (click)="this.view='brew'">
+      (click)="this.view='brewPreferences'">
         <mat-icon>chevron_left</mat-icon></button>
-      <button mat-raised-button (click)="this.skip('wine', 'food')">Skip</button>
+      <button mat-raised-button (click)="this.skip('winePreferences', 'foodPreferences')">Skip</button>
       <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
-      (click)="this.view='food'">
+      (click)="this.view='foodPreferences'">
         <mat-icon>chevron_right</mat-icon>
       </button>
     </div>
   </div>
-  <div class="preferenceSelect" id="food" *ngIf="this.view==='food'">
+  <div class="preferenceSelect" id="food" *ngIf="this.view==='foodPreferences'">
     <h2>Food Preference?</h2>
     <mat-button-toggle-group>
       <mat-button-toggle mat-raised-button (click)="this.intakeService.updateFood('pub grub')">Pub Grub</mat-button-toggle>
@@ -41,16 +41,16 @@
     </mat-button-toggle-group>
     <div class="skipNextBtns">
       <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
-      (click)="this.view='wine'">
+      (click)="this.view='winePreferences'">
         <mat-icon>chevron_left</mat-icon></button>
-      <button mat-raised-button (click)="this.skip('food', 'occasion')">Skip</button>
+      <button mat-raised-button (click)="this.skip('foodPreferences', 'occasionPreferences')">Skip</button>
       <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
-      (click)="this.view='occasion'">
+      (click)="this.view='occasionPreferences'">
         <mat-icon>chevron_right</mat-icon>
       </button>
     </div>
   </div>
-  <div class="preferenceSelect" id="occasion" *ngIf="this.view==='occasion'">
+  <div class="preferenceSelect" id="occasion" *ngIf="this.view==='occasionPreferences'">
     <h2>Occasion Preference?</h2>
     <mat-button-toggle-group>
       <mat-button-toggle mat-raised-button (click)="this.intakeService.updateOccasion('trivia night')">Trivia Night</mat-button-toggle>
@@ -60,7 +60,7 @@
     </mat-button-toggle-group>
     <div class="skipNextBtns">
       <button mat-icon-button color="primary" aria-label="Button with a right chevron icon"
-      (click)="this.view='food'">
+      (click)="this.view='foodPreferences'">
         <mat-icon>chevron_left</mat-icon></button>
       <button mat-raised-button (click)="this.intakeService.onSubmit()">Finish</button>
     </div>

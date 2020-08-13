@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { OnboardComponent } from './onboard/onboard.component';
 import { LandingComponent } from './landing/landing.component';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 const routes: Routes = [
   { path: 'onboard', component: OnboardComponent },
   { path: 'landing', component: LandingComponent },
   { path: 'sign-in', component: SignInComponent },
+  { path: 'profile', component: ProfileComponent },
   { path: '',   redirectTo: '/sign-in', pathMatch: 'full' }
 ];
 

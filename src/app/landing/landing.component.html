@@ -1,8 +1,9 @@
 <h3>Our new user has selected the following</h3>
-<h3>{{this.intakeService.newUser.value.brew}}</h3>
-<h3>{{this.intakeService.newUser.value.wine}}</h3>
-<h3>{{this.intakeService.newUser.value.food}}</h3>
-<h3>{{this.intakeService.newUser.value.occasion}}</h3>
+<h3>{{this.intakeService.newUser.value.brewPreferences}}</h3>
+<h3>{{this.intakeService.newUser.value.winePreferences}}</h3>
+<h3>{{this.intakeService.newUser.value.foodPreferences}}</h3>
+<h3>{{this.intakeService.newUser.value.occasionPreferences}}</h3>
 
-<img id="tempImg" src={{this.mockVendors[0].imageSrc}}>
+<img id="tempImg" src={{this.mockVendors[0].imageSrc}}><br>
 <button routerLink="../onboard" mat-raised-button>Go Back</button>
+<button routerLink="../profile" mat-raised-button>Go To profile</button>

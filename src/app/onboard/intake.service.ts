@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Router } from "@angular/router"
+import { UserService } from '../users/user.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class IntakeService {
-  newUser = { 
+  newUser:any = { 
     value: {
-      brew: "",
-      wine: "",
-      food: "",
-      occasion: ""
+      brewPreferences:[],
+      winePreferences:[],
+      foodPreferences:[],
+      occasionPreferences:[]
     } 
   };
   
@@ -19,23 +20,24 @@ export class IntakeService {
     console.log('hi')
   }
   updateBrew(brew){
-    this.newUser.value.brew = brew;
+    this.newUser.value.brewPreferences = [brew];
   }
   updateWine(wine){
-    this.newUser.value.wine = wine;
+    this.newUser.value.winePreferences = [wine];
   }
   updateFood(food){
-    this.newUser.value.food = food;
+    this.newUser.value.foodPreferences = [food];
   }
   updateOccasion(occasion){
-    this.newUser.value.occasion = occasion;
+    this.newUser.value.occasionPreferences = [occasion];
   }
 
 
   onSubmit(){
-    console.log(this.newUser)
-    this.router.navigate(['landing'])
+    this.userService.currentUser.userPreferences = this.newUser.value
+    console.log(this.userService.currentUser.userPreferences)
+    this.router.navigate(['profile'])
   }
 
-  constructor(private router:Router) { }
+  constructor(private router:Router, public userService: UserService) { }
 }

@@ -29,15 +29,19 @@ mat-button-toggle{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    justify-content: center;
 }
 
 .skipNextBtns {
-    display: flex;
+    // display: flex;
 }
 .onboard-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100vh;
     background-color: beige;
+}
+.preferenceSelect #brew {
+    // background-image: url('../../assets/page_backgrounds/brew_select_background.png');
 }

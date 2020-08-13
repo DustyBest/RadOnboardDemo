@@ -15,8 +15,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { MatIconModule } from '@angular/material/icon';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -25,7 +27,8 @@ import { MatIconModule } from '@angular/material/icon';
     AppComponent,
     OnboardComponent,
     LandingComponent,
-    SignInComponent
+    SignInComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatRadioModule,
     MatButtonToggleModule,
-    MatIconModule   
+    MatIconModule,
+    MatSlideToggleModule   
   ],
   providers: [
     IntakeService
