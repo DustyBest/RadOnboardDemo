@@ -4,8 +4,8 @@
         "locationName": "Eppig Brewing Waterfront Biergarten",
         "neighborhood": "Point Loma",
         "locationType": "Tasting Room",
-        "cuisine": "None",
-        "locationPrice": "1",
+        "cuisine": "No Food",
+        "locationPrice": "$",
         "address": "2817 Dickens St, San Diego, CA 9216",
         "imageSrc": "https://images.squarespace-cdn.com/content/v1/555fb1afe4b004a8dfc0ce79/1553457670794-HGK6BG5QWZGG15N2UIDR/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/_W2X3776.jpg"
     },
@@ -15,7 +15,7 @@
         "neighborhood": "Bay Park",
         "locationType": "Brewery",
         "cuisine": "American",
-        "locationPrice": "1",
+        "locationPrice": "$",
         "address": "1205 Knoxville St, San Diego, CA 92110",
         "imageSrc": "https://www.goodeatssandiego.com/wp-content/uploads/2015/10/Coronado-Brewing-Company-Good-Eats-San-Diego-Mike-Puckett-Photography-1024-9-of-16.jpg"
     },
@@ -25,7 +25,7 @@
         "neighborhood": "North Park",
         "locationType": "Tasting Room",
         "cuisine": "Food Trucks",
-        "locationPrice": "1",
+        "locationPrice": "$",
         "address": "3176 Thorn St, San Diego, CA 92104",
         "imageSrc": "https://thorn.beer/assets/ThornBrewingNorthPark2.jpg"
     },
@@ -35,7 +35,7 @@
         "neighborhood": "Liberty Station",
         "locationType": "Restaurant",
         "cuisine": "Gastropub",
-        "locationPrice": "2",
+        "locationPrice": "$$",
         "address": "2816 Historic Decatur Rd, San Diego, CA 92106",
         "imageSrc": "https://www.acousticspottalent.com/sites/default/files/styles/full_preview_image_845x480_/public/venues/2019-11/stone%20brewing%20liberty%20_%20acoustic%20spot%20talent.jpg?itok=EmHqrek_"
     },
@@ -45,7 +45,7 @@
         "neighborhood": "East Village",
         "locationType": "Bar",
         "cuisine": "Brunch",
-        "locationPrice": "3",
+        "locationPrice": "$$$",
         "address": "903 Island Ave, San Diego, CA 92101",
         "imageSrc": "https://images.squarespace-cdn.com/content/v1/547373fce4b08b96ee5ef5be/1428008090619-A5V7CAHX5E0HF0WLDJIA/ke17ZwdGBToddI8pDm48kN207Z9QU98tPDw_YXR8q89Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PID0dx1yIafU9kqGjPwQcvKJFPMM5Bn5lGYL-yleo3PigKMshLAGzx4R3EDFOm1kBS/HDBC.jpg"
     }

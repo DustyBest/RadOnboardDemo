@@ -1,0 +1,11 @@
+<mat-card class="vendor-card">
+    <img mat-card-image src={{this.mockVendors[0].imageSrc}} alt="Photo of {{this.mockVendors[0].locationName}}">
+    <mat-card-content class="name">
+      <h2><Strong>{{this.mockVendors[0].locationName}}</Strong></h2>
+      <label>{{this.mockVendors[0].neighborhood}}</label>
+    </mat-card-content>
+    <mat-card-content class="info">
+      <p>{{this.mockVendors[0].locationType}} &bull; {{this.mockVendors[0].cuisine}} &bull; {{this.mockVendors[0].locationPrice}}<br>
+      {{this.mockVendors[0].address}}</p>
+    </mat-card-content>
+</mat-card>

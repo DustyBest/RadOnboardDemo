@@ -1,9 +1,7 @@
-<h3>Our new user has selected the following</h3>
-<h3>{{this.intakeService.newUser.value.brewPreferences}}</h3>
-<h3>{{this.intakeService.newUser.value.winePreferences}}</h3>
-<h3>{{this.intakeService.newUser.value.foodPreferences}}</h3>
-<h3>{{this.intakeService.newUser.value.occasionPreferences}}</h3>
+<div class="landing-container">
+    <app-vendor-cards *ngFor="let vendor of mockVendors"></app-vendor-cards>
 
-<img id="tempImg" src={{this.mockVendors[0].imageSrc}}><br>
-<button routerLink="../onboard" mat-raised-button>Go Back</button>
-<button routerLink="../profile" mat-raised-button>Go To profile</button>
+    <br>
+    <button routerLink="../onboard" mat-raised-button>Go Back</button>
+    <button routerLink="../profile" mat-raised-button>Go To profile</button>
+</div>

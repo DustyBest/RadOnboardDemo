@@ -36,7 +36,7 @@ export class IntakeService {
   onSubmit(){
     this.userService.currentUser.userPreferences = this.newUser.value
     console.log(this.userService.currentUser.userPreferences)
-    this.router.navigate(['profile'])
+    this.router.navigate(['landing'])
   }
 
   constructor(private router:Router, public userService: UserService) { }

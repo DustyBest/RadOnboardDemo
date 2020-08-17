@@ -16,9 +16,11 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatCardModule} from '@angular/material/card';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ProfileComponent } from './profile/profile.component';
+import { VendorCardsComponent } from './vendors/vendor-cards/vendor-cards.component';
 
 
 
@@ -28,7 +30,8 @@ import { ProfileComponent } from './profile/profile.component';
     OnboardComponent,
     LandingComponent,
     SignInComponent,
-    ProfileComponent
+    ProfileComponent,
+    VendorCardsComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,8 @@ import { ProfileComponent } from './profile/profile.component';
     MatRadioModule,
     MatButtonToggleModule,
     MatIconModule,
-    MatSlideToggleModule   
+    MatSlideToggleModule,
+    MatCardModule  
   ],
   providers: [
     IntakeService
