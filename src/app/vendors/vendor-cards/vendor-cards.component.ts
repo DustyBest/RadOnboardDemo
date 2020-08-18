@@ -11,6 +11,10 @@ export class VendorCardsComponent implements OnInit {
 
   mockVendors: any = (mockVendors as any).default;
 
+  test(){
+    console.log('testing');
+  }
+
   constructor() { }
 
   ngOnInit(): void {

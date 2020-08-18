@@ -1,11 +1,13 @@
-<mat-card class="vendor-card">
-    <img mat-card-image src={{this.mockVendors[0].imageSrc}} alt="Photo of {{this.mockVendors[0].locationName}}">
+<mat-card class="vendor-card" *ngFor="let vendor of mockVendors">
+    <div class=".img-container">
+      <img mat-card-image src={{vendor.imageSrc}} alt="Photo of {{vendor.locationName}}">
+    </div>
     <mat-card-content class="name">
-      <h2><Strong>{{this.mockVendors[0].locationName}}</Strong></h2>
-      <label>{{this.mockVendors[0].neighborhood}}</label>
+      <h2><Strong>{{vendor.locationName}}</Strong></h2>
+      <label>{{ vendor.neighborhood }}</label>
     </mat-card-content>
     <mat-card-content class="info">
-      <p>{{this.mockVendors[0].locationType}} &bull; {{this.mockVendors[0].cuisine}} &bull; {{this.mockVendors[0].locationPrice}}<br>
-      {{this.mockVendors[0].address}}</p>
+      <p>{{vendor.locationType}} &bull; {{vendor.cuisine}} &bull; {{vendor.locationPrice}}<br>
+      {{vendor.address}}</p>
     </mat-card-content>
 </mat-card>

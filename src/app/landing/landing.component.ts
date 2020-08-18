@@ -9,7 +9,7 @@ import { VendorCardsComponent } from '../vendors/vendor-cards/vendor-cards.compo
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
-  something = "This is something";
+  
   mockVendors: any = (mockVendors as any).default;
 
   constructor(public intakeService:IntakeService) { }
