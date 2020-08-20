@@ -1,27 +1,6 @@
 <div class="profile-container">
-    <img src="../../assets/logos/Logo-Full-Color.png">
+    <img src="../../assets/logos/Logo-Full-Color.png" routerLink="../landing">
     <img src="../../assets/image/mock-profile-image.png">
-
-
-    <!-- <div>
-
-      <mat-slide-toggle class="preferenceToggle" [(ngModel)]="brewPrefsChecked"><strong>Brew Preferences</strong></mat-slide-toggle>
-
-      <mat-button-toggle-group class="preferenceGroup" #brewPreferences="matButtonToggleGroup" multiple *ngIf="this.brewPrefsChecked">
-        <mat-button-toggle (change)="this.currentUser.preferences.brewPreferences.push('value pushed')" value="light" checked="{{this.currentUser.preferences.brewPreferences.includes('light')}}">Light</mat-button-toggle>
-        <mat-button-toggle value="amber" checked="{{this.currentUser.preferences.brewPreferences.includes('amber')}}">Amber</mat-button-toggle>
-        <mat-button-toggle value="dark" checked="{{this.currentUser.preferences.brewPreferences.includes('dark')}}">Dark</mat-button-toggle>
-        <mat-button-toggle value="pilsners" checked="{{this.currentUser.preferences.brewPreferences.includes('pilsners')}}">Pilsners</mat-button-toggle>
-        <mat-button-toggle value="stouts" checked="{{this.currentUser.preferences.brewPreferences.includes('stouts')}}">Stouts</mat-button-toggle>
-        <mat-button-toggle value="sours" checked="{{this.currentUser.preferences.brewPreferences.includes('sours')}}">Sours</mat-button-toggle>
-        <mat-button-toggle value="kombucha" checked="{{this.currentUser.preferences.brewPreferences.includes('kombucha')}}">Kombucha</mat-button-toggle>
-        <mat-button-toggle value="lagers" checked="{{this.currentUser.preferences.brewPreferences.includes('lagers')}}">Lagers</mat-button-toggle>
-        <mat-button-toggle value="porters" checked="{{this.currentUser.preferences.brewPreferences.includes('porters')}}">Porters</mat-button-toggle>
-        <mat-button-toggle value="ipa" checked="{{this.currentUser.preferences.brewPreferences.includes('ipa')}}">IPA</mat-button-toggle>
-        <mat-button-toggle value="blondes" checked="{{this.currentUser.preferences.brewPreferences.includes('blondes')}}">Blondes</mat-button-toggle>
-        <mat-button-toggle value="belgian" checked="{{this.currentUser.preferences.brewPreferences.includes('belgiam')}}">Belgian</mat-button-toggle>
-      </mat-button-toggle-group>
-    </div> -->
 
     <div>
       <mat-slide-toggle class="preferenceToggle" [(ngModel)]="brewPrefsChecked"><strong>Brew Preferences</strong></mat-slide-toggle>
@@ -66,7 +45,7 @@
         {{occasion}}</mat-button-toggle>
       </mat-button-toggle-group>
     </div>
-<br><br><br><h2 (click)='this.printUser()'>Print Info</h2>
+<!-- <br><br><br><h2 (click)='this.printUser()'>Print Info</h2> -->
 
 </div>
 
