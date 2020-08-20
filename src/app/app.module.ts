@@ -21,6 +21,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ProfileComponent } from './profile/profile.component';
 import { VendorCardsComponent } from './vendors/vendor-cards/vendor-cards.component';
+import { FooterNavComponent } from './footer-nav/footer-nav.component';
 
 
 
@@ -31,7 +32,8 @@ import { VendorCardsComponent } from './vendors/vendor-cards/vendor-cards.compon
     LandingComponent,
     SignInComponent,
     ProfileComponent,
-    VendorCardsComponent
+    VendorCardsComponent,
+    FooterNavComponent
   ],
   imports: [
     BrowserModule,

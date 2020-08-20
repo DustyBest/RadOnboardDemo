@@ -12,6 +12,7 @@ export class LandingComponent implements OnInit {
   
   mockVendors: any = (mockVendors as any).default;
   value = 'Search';
+  name = 'User';
 
   constructor(public intakeService:IntakeService) { }
 
