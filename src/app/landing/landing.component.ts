@@ -11,6 +11,7 @@ import { VendorCardsComponent } from '../vendors/vendor-cards/vendor-cards.compo
 export class LandingComponent implements OnInit {
   
   mockVendors: any = (mockVendors as any).default;
+  value = 'Search';
 
   constructor(public intakeService:IntakeService) { }
 

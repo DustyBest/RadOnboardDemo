@@ -1,4 +1,19 @@
 <div class="landing-container">
+    <img src="../../assets/logos/Logo-Full-Color.png">
+
+    <div class="search-field">
+        <button id='search' mat-button mat-icon-button aria-label="Search" (click)="value='search pressed'">
+            <mat-icon>search</mat-icon>
+        </button>
+            
+        <input matInput type="search" [(ngModel)]="value">
+            
+            
+        <button id="menuBtn" mat-button mat-icon-button aria-label="Menu" (click)="value='menu pressed'">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+
     <app-vendor-cards></app-vendor-cards>
     <br>
     <button routerLink="../onboard" mat-raised-button>Go Back</button>
