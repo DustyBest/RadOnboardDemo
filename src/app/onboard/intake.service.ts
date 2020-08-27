@@ -7,6 +7,9 @@ import { UserService } from '../users/user.service';
 })
 export class IntakeService {
   newUser:any = { 
+    firstName:String,
+    lastName:String,
+    dob:Date,
     value: {
       brewPreferences:[],
       winePreferences:[],

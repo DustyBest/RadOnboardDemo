@@ -1,4 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~leaflet/dist/leaflet.css";
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* For use in src/lib/core/theming/_palette.scss */
+$md-radpalette: (
+    50 : #fff0e6,
+    100 : #ffdac1,
+    200 : #ffc197,
+    300 : #ffa86d,
+    400 : #ff954e,
+    500 : #ff822f,
+    600 : #ff7a2a,
+    700 : #ff6f23,
+    800 : #ff651d,
+    900 : #ff5212,
+    A100 : #ffffff,
+    A200 : #fffaf9,
+    A400 : #ffd3c6,
+    A700 : #ffc0ad,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);

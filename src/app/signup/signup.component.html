@@ -1,0 +1,28 @@
+<div class="signup-container">
+    <p class='header'>Create an Account</p>
+    <p class='sub-head'>Let us connect you with brewery experiences in San Diego</p>
+    
+    <!-- <form [formGroup]="form"> -->
+        <mat-form-field appearance='outline'>
+            <mat-label>First Name</mat-label>
+            <input matInput type='text' [(ngModel)]="firstName" required>
+        </mat-form-field>
+        <mat-form-field appearance='outline'>
+            <mat-label>Last Name</mat-label>
+            <input matInput type="text" [(ngModel)]="lastName" required>
+        </mat-form-field>
+        <mat-form-field appearance='outline'>
+            <mat-label>Password</mat-label>
+            <input matInput type="password">
+        </mat-form-field>
+        <mat-form-field appearance='outline'>
+            <mat-label>Repeat Password</mat-label>
+            <input matInput type="password">
+        </mat-form-field>
+        <mat-form-field appearance='outline'>
+            <mat-label>Date of Birth</mat-label>
+            <input matInput type="date" [(ngModel)]="dob" required>
+        </mat-form-field>
+    <!-- </form> -->
+    <button type='submit' mat-raised-button (click)='submitForm()'>Create Account</button>
+</div>

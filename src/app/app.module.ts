@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { OnboardComponent } from './onboard/onboard.component';
 import { LandingComponent } from './landing/landing.component';
+import { FooterNavComponent } from './footer-nav/footer-nav.component';
 
 import { IntakeService } from './onboard/intake.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,7 +22,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { MatIconModule } from '@angular/material/icon';
 import { ProfileComponent } from './profile/profile.component';
 import { VendorCardsComponent } from './vendors/vendor-cards/vendor-cards.component';
-import { FooterNavComponent } from './footer-nav/footer-nav.component';
+import { SignupComponent } from './signup/signup.component';
+import { VendorPageComponent } from './vendors/vendor-page/vendor-page.component';
 
 
 
@@ -33,7 +35,9 @@ import { FooterNavComponent } from './footer-nav/footer-nav.component';
     SignInComponent,
     ProfileComponent,
     VendorCardsComponent,
-    FooterNavComponent
+    FooterNavComponent,
+    SignupComponent,
+    VendorPageComponent
   ],
   imports: [
     BrowserModule,
