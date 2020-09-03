@@ -2,7 +2,7 @@
     <div class=".img-container">
       <img mat-card-image src={{vendor.imageSrc}} alt="Photo of {{vendor.locationName}}">
     </div>
-    <mat-card-content class="name">
+    <mat-card-content class="name" (click)="onSelect(vendor)">
       <h2><Strong>{{vendor.locationName}}</Strong></h2>
       <label>{{ vendor.neighborhood }}</label>
     </mat-card-content>

@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'sign-in', component: SignInComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'vendor', component: VendorPageComponent },
+  { path: 'vendor/:id', component: VendorPageComponent },
   { path: '',   redirectTo: '/sign-in', pathMatch: 'full' }
 ];
 

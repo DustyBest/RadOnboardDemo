@@ -1,7 +1,24 @@
 <div class="vendor-page-container">
+
+    <div class='vendor-card'>  
+        <div class=".img-container">
+            <img mat-card-image src={{currentVendor.imageSrc}} alt="Photo of {{currentVendor.locationName}}">
+        </div>
+        <mat-card-content class="name">
+            <h2><Strong>{{currentVendor.locationName}}</Strong></h2>
+            <label>{{ currentVendor.neighborhood }}</label>
+        </mat-card-content>
+        <mat-card-content class="info">
+            <p>{{currentVendor.locationType}} &bull; {{currentVendor.cuisine}} &bull; {{currentVendor.locationPrice}}<br>
+            {{currentVendor.address}}</p>
+        </mat-card-content>
+    </div>
+
+
     <div class="map-container">
         <div class="map-frame">
             <div id="vendorMap"></div>
         </div>
     </div>
+
 </div>
