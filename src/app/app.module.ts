@@ -24,6 +24,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { VendorCardsComponent } from './vendors/vendor-cards/vendor-cards.component';
 import { SignupComponent } from './signup/signup.component';
 import { VendorPageComponent } from './vendors/vendor-page/vendor-page.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 
 
@@ -56,7 +57,8 @@ import { VendorPageComponent } from './vendors/vendor-page/vendor-page.component
     MatCardModule  
   ],
   providers: [
-    IntakeService
+    IntakeService,
+    {provide : LocationStrategy , useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })

@@ -39,7 +39,7 @@ export class VendorPageComponent implements OnInit {
     let id = parseInt(this.route.snapshot.paramMap.get('id'));
     this.vendorId = id;
     this.currentVendor = this.mockVendors.find(x => x.id == id);
-    console.log(this.currentVendor);
+    console.log(this.currentVendor.locationName);
 
     const map = L.map('vendorMap').setView([this.currentVendor.geolocation.lat, this.currentVendor.geolocation.long], 17);
 
@@ -52,14 +52,14 @@ export class VendorPageComponent implements OnInit {
       zoomOffset: -1,
       accessToken: apiToken,
     }).addTo(map);
-    var marker = L.marker([this.currentVendor.geolocation.lat, this.currentVendor.geolocation.long], { title: "My House!" }).addTo(map);   
+    var marker = L.marker([this.currentVendor.geolocation.lat, this.currentVendor.geolocation.long], { title: this.currentVendor.locationName }).addTo(map);   
 
     let popup = L.popup();
 
     function onMapClick(e) {
       console.log(marker)
       console.log(e)
-    popup
+      popup
         .setLatLng(e.latlng)
         .setContent("You clicked the map at " + e.target.options.title)
         .openOn(map);
