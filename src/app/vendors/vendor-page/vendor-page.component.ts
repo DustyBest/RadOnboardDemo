@@ -3,6 +3,8 @@ import { environment } from '../../../environments/environment';
 import * as L from 'leaflet';
 import { ActivatedRoute } from '@angular/router';
 import * as mockVendors from '../mock-vendors.json';
+// import { Router } from '@angular/router';
+// import { Location } from '@angular/common';
 
 
 let apiToken = environment.MAPBOX_API_KEY;
@@ -36,10 +38,12 @@ export class VendorPageComponent implements OnInit {
 
   ngOnInit(): void {
 
+    // console.log(parseInt(this.route.snapshot.params.id));
     let id = parseInt(this.route.snapshot.paramMap.get('id'));
     this.vendorId = id;
     this.currentVendor = this.mockVendors.find(x => x.id == id);
-    console.log(this.currentVendor.locationName);
+    // this.router.navigate(['/vendor', this.vendorId]);
+    console.log(this.currentVendor.locationName, this.vendorId);
 
     const map = L.map('vendorMap').setView([this.currentVendor.geolocation.lat, this.currentVendor.geolocation.long], 17);
 
