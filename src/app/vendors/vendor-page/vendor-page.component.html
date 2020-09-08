@@ -11,6 +11,13 @@
         <mat-card-content class="info">
             <p>{{currentVendor.locationType}} &bull; {{currentVendor.cuisine}} &bull; {{currentVendor.locationPrice}}<br>
             {{currentVendor.address}}</p>
+            <div class='socials'>
+                <label>See More</label>
+                <a href={{currentVendor.insta_link}}  target="_blank"><button mat-button>
+                    <img class='png-icon' src='../../../assets/icons/ig_logo.png'>
+                    <!-- <a href="https://www.instagram.com/stonelibertystation/"><img class='png-icon' src='../../../assets/icons/ig_logo.png'></a> -->
+                </button></a>
+            </div>
         </mat-card-content>
     </div>
 

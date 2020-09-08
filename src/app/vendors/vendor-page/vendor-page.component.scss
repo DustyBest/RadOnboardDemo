@@ -17,7 +17,7 @@
   width: 100%;
   max-width: 450px;
   background-color: cadetblue;
-  margin-top: 15px;
+  margin-top: 0px;
 }
   
 .map-frame {
@@ -81,4 +81,34 @@ mat-card-content.name {
   flex-direction: column;
   margin: 0px 10px;
 }
+.info p {
+  margin-bottom: 0px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.info label {
+  // background-color:white;
+  // white-space: nowrap;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: rgb(255,118,6);
+  border: 2px solid rgb(255,118,6);
+  font-weight: normal;
+  line-height: 0.7;
+  // align-self: center;
+  // flex-basis: 1;
+}
+.mat-button {
+  min-width: 30px;
+  padding-left: 7px;
+}
+.png-icon {
+  height: 30px;
+  width: 30px;
+}
+
 ///////////////////////////////////////////
