@@ -4,20 +4,27 @@
     display: flex;
     flex-direction: column;
     padding: 15px;
+    align-items: center;
+    flex-grow:1;
+}
+
+.preferenceWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 450px;
+    width: 100%;
 }
 
 .profile-container img {
     align-self: center;
     width: 200px;
-    padding: 15px;
 }
-
-.selectedPref{
-
+.logo {
+    padding:15px 0px;
 }
-
-.deselectedPref{
-
+.profile_image {
+    padding: 0px 0px 25px 0px;
 }
 
 .preferenceToggle {

@@ -1,0 +1,18 @@
+<div *ngIf='this.isLoggedIn$ | async as isLoggedIn' class='footer-container'>
+    <div class="footer_wrapper">
+        <div class='footer_buttons'>
+            <button mat-icon-button routerLink="../landing">
+                <mat-icon >home</mat-icon>
+            </button>
+            <button mat-icon-button routerLink="../landing">
+                <mat-icon>search</mat-icon>
+            </button>
+            <button mat-icon-button routerLink="../landing">
+                <mat-icon>map</mat-icon>
+            </button>
+            <button mat-icon-button routerLink="../profile">
+                <mat-icon>account_circle</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>

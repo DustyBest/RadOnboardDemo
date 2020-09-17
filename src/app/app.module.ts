@@ -25,6 +25,7 @@ import { VendorCardsComponent } from './vendors/vendor-cards/vendor-cards.compon
 import { SignupComponent } from './signup/signup.component';
 import { VendorPageComponent } from './vendors/vendor-page/vendor-page.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -38,7 +39,8 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     VendorCardsComponent,
     FooterNavComponent,
     SignupComponent,
-    VendorPageComponent
+    VendorPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,51 +1,53 @@
 <div class="profile-container">
-    <img src="../../assets/logos/Logo-Full-Color.png" routerLink="../landing">
-    <img src="../../assets/image/mock-profile-image.png">
+    <img class="logo" src="../../assets/logos/Logo-Full-Color.png" routerLink="../landing">
+    <img class="profile_image" src="../../assets/image/mock-profile-image.png">
 
-    <div>
-      <mat-slide-toggle class="preferenceToggle" [(ngModel)]="brewPrefsChecked"><strong>Brew Preferences</strong></mat-slide-toggle>
-    
-      <mat-button-toggle-group class="preferenceGroup" #brewPreferences="matButtonToggleGroup" multiple *ngIf="this.brewPrefsChecked">
-        <mat-button-toggle *ngFor="let brew of this.preferenceOptions.brewPreferences" 
-        (change)="this.addOrRemove(this.currentUser.preferences.brewPreferences, brew)"
-        value="{{brew}}" checked="{{this.currentUser.preferences.brewPreferences.includes(brew)}}">
-        {{brew}}</mat-button-toggle>
-      </mat-button-toggle-group>
-    </div>
+    <div class="preferenceWrapper">
 
-    <div>
-      <mat-slide-toggle class="preferenceToggle" [(ngModel)]="winePrefsChecked"><strong>Wine Preferences</strong></mat-slide-toggle>
-    
-      <mat-button-toggle-group class="preferenceGroup" #winePreferences="matButtonToggleGroup" multiple *ngIf="this.winePrefsChecked">
-        <mat-button-toggle *ngFor="let wine of this.preferenceOptions.winePreferences" 
-        (change)="this.addOrRemove(this.currentUser.preferences.winePreferences, wine)"
-        value="{{wine}}" checked="{{this.currentUser.preferences.winePreferences.includes(wine)}}">
-        {{wine}}</mat-button-toggle>
-      </mat-button-toggle-group>
-    </div>
+      <div>
+        <mat-slide-toggle class="preferenceToggle" [(ngModel)]="brewPrefsChecked"><strong>Brew Preferences</strong></mat-slide-toggle>
+      
+        <mat-button-toggle-group class="preferenceGroup" #brewPreferences="matButtonToggleGroup" multiple *ngIf="this.brewPrefsChecked">
+          <mat-button-toggle *ngFor="let brew of this.preferenceOptions.brewPreferences" 
+          (change)="this.addOrRemove(this.currentUser.preferences.brewPreferences, brew)"
+          value="{{brew}}" checked="{{this.currentUser.preferences.brewPreferences.includes(brew)}}">
+          {{brew}}</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
 
-    <div>
-      <mat-slide-toggle class="preferenceToggle" [(ngModel)]="foodPrefsChecked"><strong>Food Preferences</strong></mat-slide-toggle>
-    
-      <mat-button-toggle-group class="preferenceGroup" #foodPreferences="matButtonToggleGroup" multiple *ngIf="this.foodPrefsChecked">
-        <mat-button-toggle *ngFor="let food of this.preferenceOptions.foodPreferences" 
-        (change)="this.addOrRemove(this.currentUser.preferences.foodPreferences, food)"
-        value="{{food}}" checked="{{this.currentUser.preferences.foodPreferences.includes(food)}}">
-        {{food}}</mat-button-toggle>
-      </mat-button-toggle-group>
-    </div>
+      <div>
+        <mat-slide-toggle class="preferenceToggle" [(ngModel)]="winePrefsChecked"><strong>Wine Preferences</strong></mat-slide-toggle>
+      
+        <mat-button-toggle-group class="preferenceGroup" #winePreferences="matButtonToggleGroup" multiple *ngIf="this.winePrefsChecked">
+          <mat-button-toggle *ngFor="let wine of this.preferenceOptions.winePreferences" 
+          (change)="this.addOrRemove(this.currentUser.preferences.winePreferences, wine)"
+          value="{{wine}}" checked="{{this.currentUser.preferences.winePreferences.includes(wine)}}">
+          {{wine}}</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
 
-    <div>
-      <mat-slide-toggle class="preferenceToggle" [(ngModel)]="occasionPrefsChecked"><strong>Occasion Preferences</strong></mat-slide-toggle>
-    
-      <mat-button-toggle-group class="preferenceGroup" #occasionPreferences="matButtonToggleGroup" multiple *ngIf="this.occasionPrefsChecked">
-        <mat-button-toggle *ngFor="let occasion of this.preferenceOptions.occasionPreferences" 
-        (change)="this.addOrRemove(this.currentUser.preferences.occasionPreferences, occasion)"
-        value="{{occasion}}" checked="{{this.currentUser.preferences.occasionPreferences.includes(occasion)}}">
-        {{occasion}}</mat-button-toggle>
-      </mat-button-toggle-group>
+      <div>
+        <mat-slide-toggle class="preferenceToggle" [(ngModel)]="foodPrefsChecked"><strong>Food Preferences</strong></mat-slide-toggle>
+      
+        <mat-button-toggle-group class="preferenceGroup" #foodPreferences="matButtonToggleGroup" multiple *ngIf="this.foodPrefsChecked">
+          <mat-button-toggle *ngFor="let food of this.preferenceOptions.foodPreferences" 
+          (change)="this.addOrRemove(this.currentUser.preferences.foodPreferences, food)"
+          value="{{food}}" checked="{{this.currentUser.preferences.foodPreferences.includes(food)}}">
+          {{food}}</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+
+      <div>
+        <mat-slide-toggle class="preferenceToggle" [(ngModel)]="occasionPrefsChecked"><strong>Occasion Preferences</strong></mat-slide-toggle>
+      
+        <mat-button-toggle-group class="preferenceGroup" #occasionPreferences="matButtonToggleGroup" multiple *ngIf="this.occasionPrefsChecked">
+          <mat-button-toggle *ngFor="let occasion of this.preferenceOptions.occasionPreferences" 
+          (change)="this.addOrRemove(this.currentUser.preferences.occasionPreferences, occasion)"
+          value="{{occasion}}" checked="{{this.currentUser.preferences.occasionPreferences.includes(occasion)}}">
+          {{occasion}}</mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
     </div>
-<!-- <br><br><br><h2 (click)='this.printUser()'>Print Info</h2> -->
 
 </div>
 

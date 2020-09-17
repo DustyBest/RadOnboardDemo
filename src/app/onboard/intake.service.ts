@@ -1,11 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Router } from "@angular/router"
 import { UserService } from '../users/user.service';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class IntakeService {
+
+  public loggedIn: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+
+  get isLoggedIn() {
+    return this.loggedIn.asObservable();
+  }
+
   newUser:any = { 
     firstName:String,
     lastName:String,
@@ -37,6 +45,9 @@ export class IntakeService {
 
 
   onSubmit(){
+    console.log(this.loggedIn)
+    this.loggedIn.next(true);
+    console.log(this.loggedIn)
     this.userService.currentUser.userPreferences = this.newUser.value
     console.log(this.userService.currentUser.userPreferences)
     this.router.navigate(['landing'])
