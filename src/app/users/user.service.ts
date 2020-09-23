@@ -7,7 +7,8 @@ export class UserService {
 
   currentUser = {
     id: Number,
-    fullName: String,
+    firstName: String,
+    lastName: String,
     password: String,
     dob: Date,
     userPreferences: {

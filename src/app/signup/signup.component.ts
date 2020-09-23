@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { IntakeService } from '../onboard/intake.service';
-// import { FormGroup, FormBuilder } from '@angular/forms';
-
 
 @Component({
   selector: 'app-signup',
@@ -9,28 +9,42 @@ import { IntakeService } from '../onboard/intake.service';
   styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent implements OnInit {
-  firstName;
-  lastName;
-  password;
-  dob;
-  // form: FormGroup;
+  signUpForm: FormGroup;
+  firstName: FormControl;
+  lastName: FormControl;
+  password: FormControl;
+  dob: FormControl;
 
   submitForm() {
-    this.intakeService.newUser.firstName = this.firstName;
-    this.intakeService.newUser.lastName = this.lastName;
-    this.intakeService.newUser.dob = this.dob;
-    console.log(this.intakeService.newUser)
+    this.intakeService.newUser.firstName = this.signUpForm.value.firstName;
+    this.intakeService.newUser.lastName = this.signUpForm.value.lastName;
+    this.intakeService.newUser.password = this.signUpForm.value.password;
+    this.intakeService.newUser.dob = this.signUpForm.value.dob;
+    // console.log(this.intakeService.newUser)
+    this.router.navigate(['onboard'])
   }
 
-  constructor(public intakeService: IntakeService) { }
+  createFormControls() {
+    this.firstName = new FormControl();
+    this.lastName = new FormControl();
+    this.password = new FormControl();
+    this.dob = new FormControl();
+  }
+
+  createForm() {
+    this.signUpForm = new FormGroup({
+      firstName: this.firstName,
+      lastName: this.lastName,
+      password: this.password,
+      dob: this.dob
+    });
+  }
+
+  constructor(public intakeService: IntakeService, public router:Router) { }
 
   ngOnInit(): void {
-    // this.form = this.formBuilder.group({
-    //   firstName:'',
-    //   lastName:'',
-    //   password:'',
-    //   dob:''
-    // });
+    this.createFormControls();
+    this.createForm();
   }
 
 }

@@ -18,7 +18,7 @@ export class IntakeService {
     firstName:String,
     lastName:String,
     dob:Date,
-    value: {
+    userPreferences: {
       brewPreferences:[],
       winePreferences:[],
       foodPreferences:[],
@@ -27,29 +27,29 @@ export class IntakeService {
   };
   
 
-  sayHi(){
-    console.log('hi')
-  }
+  // sayHi(){
+  //   console.log('hi')
+  // }
   updateBrew(brew){
-    this.newUser.value.brewPreferences = [brew];
+    this.newUser.userPreferences.brewPreferences = [brew];
   }
   updateWine(wine){
-    this.newUser.value.winePreferences = [wine];
+    this.newUser.userPreferences.winePreferences = [wine];
   }
   updateFood(food){
-    this.newUser.value.foodPreferences = [food];
+    this.newUser.userPreferences.foodPreferences = [food];
   }
   updateOccasion(occasion){
-    this.newUser.value.occasionPreferences = [occasion];
+    this.newUser.userPreferences.occasionPreferences = [occasion];
   }
 
 
   onSubmit(){
-    console.log(this.loggedIn)
+    // console.log(this.loggedIn)
     this.loggedIn.next(true);
-    console.log(this.loggedIn)
-    this.userService.currentUser.userPreferences = this.newUser.value
-    console.log(this.userService.currentUser.userPreferences)
+    // console.log(this.loggedIn)
+    this.userService.currentUser = this.newUser
+    // console.log(this.userService.currentUser)
     this.router.navigate(['landing'])
   }
 

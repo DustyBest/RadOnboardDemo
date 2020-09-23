@@ -2,27 +2,34 @@
     <p class='header'>Create an Account</p>
     <p class='sub-head'>Let us connect you with brewery experiences in San Diego</p>
     
-    <!-- <form [formGroup]="form"> -->
+    <form [formGroup]="signUpForm" autocomplete="off">
         <mat-form-field appearance='outline'>
             <mat-label>First Name</mat-label>
-            <input matInput type='text' [(ngModel)]="firstName" required>
+            <input formControlName="firstName" matInput type='text' required>
         </mat-form-field>
         <mat-form-field appearance='outline'>
             <mat-label>Last Name</mat-label>
-            <input matInput type="text" [(ngModel)]="lastName" required>
+            <input formControlName="lastName" matInput type="text" required>
         </mat-form-field>
         <mat-form-field appearance='outline'>
             <mat-label>Password</mat-label>
-            <input matInput type="password">
+            <input formControlName="password" matInput type="password">
         </mat-form-field>
         <mat-form-field appearance='outline'>
             <mat-label>Repeat Password</mat-label>
             <input matInput type="password">
         </mat-form-field>
-        <mat-form-field appearance='outline'>
+        <!-- <mat-form-field appearance='outline'>
             <mat-label>Date of Birth</mat-label>
-            <input matInput type="date" [(ngModel)]="dob" required>
+            <input formControlName="dob" matInput type="date" required>
+        </mat-form-field> -->
+        <mat-form-field class='datePicker' appearance='outline'>
+            <mat-label>Date of Birth</mat-label>
+            <input formControlName="dob" matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
-    <!-- </form> -->
-    <button type='submit' mat-raised-button (click)='submitForm()'>Create Account</button>
+    
+        <button type='submit' mat-raised-button (click)='submitForm()' [disabled]="!signUpForm.valid">Create Account</button>
+    </form>
 </div>
