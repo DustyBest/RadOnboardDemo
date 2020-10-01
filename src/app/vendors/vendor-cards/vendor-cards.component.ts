@@ -11,6 +11,11 @@ import { Router } from '@angular/router';
 export class VendorCardsComponent implements OnInit {
 
   mockVendors: any = (mockVendors as any).default;
+  shuffledVendors;
+  selectedVendors;
+  
+
+
 
   constructor(private router: Router) { }
 
@@ -24,6 +29,8 @@ export class VendorCardsComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.shuffledVendors = this.mockVendors.sort(() => 0.5 - Math.random());
+    this.selectedVendors = this.shuffledVendors.slice(0, 5);
   }
 
 }

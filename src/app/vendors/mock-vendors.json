@@ -61,7 +61,7 @@
     },
     {
         "id":"005",
-        "locationName": "Half Door Brewing Co.",
+        "locationName": "Half Door Brewing Co",
         "neighborhood": "East Village",
         "locationType": "Bar",
         "cuisine": "Brunch",
@@ -73,6 +73,156 @@
         },
         "imageSrc": "https://images.squarespace-cdn.com/content/v1/547373fce4b08b96ee5ef5be/1428008090619-A5V7CAHX5E0HF0WLDJIA/ke17ZwdGBToddI8pDm48kN207Z9QU98tPDw_YXR8q89Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PID0dx1yIafU9kqGjPwQcvKJFPMM5Bn5lGYL-yleo3PigKMshLAGzx4R3EDFOm1kBS/HDBC.jpg",
         "insta_link": "https://www.instagram.com/halfdoorbrewingco/"
+    },
+    {
+        "id":"006",
+        "locationName": "Alesmith Brewing Company",
+        "neighborhood": "Miramar",
+        "locationType": "Brewery",
+        "cuisine": "Food Trucks",
+        "locationPrice": "$",
+        "address": "9990 AleSmith Ct, San Diego, CA 92126",
+        "geolocation":{
+            "lat": "32.888170",
+            "long": "-117.149640"
+        },
+        "imageSrc": "https://alesmith.com/wp-content/uploads/2020/05/hero_home_beer_02-story-02.jpg",
+        "insta_link": "https://www.instagram.com/alesmithbrewing/"
+    },
+    {
+        "id":"007",
+        "locationName": "Modern Times Beer",
+        "neighborhood": "Point Loma",
+        "locationType": "Brewery",
+        "cuisine": "Coffee",
+        "locationPrice": "$$",
+        "address": "3725 Greenwood St, San Diego, CA 92110",
+        "geolocation":{
+            "lat": "32.754230",
+            "long": "-117.206150"
+        },
+        "imageSrc": "http://www.moderntimesbeer.com/sites/default/files/tasting_room/gallery/Lomaland%20Fermentorium.jpg",
+        "insta_link": "https://www.instagram.com/moderntimesbeer/"
+    },
+    {
+        "id":"008",
+        "locationName": "Bay City Brewing Co",
+        "neighborhood": "Point Loma",
+        "locationType": "Brewery",
+        "cuisine": "Food Trucks",
+        "locationPrice": "$",
+        "address": "3760 Hancock St, San Diego, CA 92110",
+        "geolocation":{
+            "lat": "32.758370",
+            "long": "-117.212400"
+        },
+        "imageSrc": "https://baycitybrewingco.com/wp-content/uploads/2019/02/baycity-704x704_2x.jpg",
+        "insta_link": "https://www.instagram.com/baycitybrewing/"
+    },
+    {
+        "id":"009",
+        "locationName": "Amplified Ale Works Kitchen & Beer Garden",
+        "neighborhood": "Pacific Beach",
+        "locationType": "Brew Pub",
+        "cuisine": "Mediterranean",
+        "locationPrice": "$$",
+        "address": "4150 Mission Blvd #208, San Diego, CA 92109",
+        "geolocation":{
+            "lat": "32.792010",
+            "long": "-117.253860"
+        },
+        "imageSrc": "https://cdn.shopify.com/s/files/1/0355/8565/4919/files/a-piece-of-the-beach_900x.jpg?v=1584327559",
+        "insta_link": "https://www.instagram.com/amplifiedales/"
+    },
+    {
+        "id":"010",
+        "locationName": "PB Ale House",
+        "neighborhood": "Pacific Beach",
+        "locationType": "Restaurant",
+        "cuisine": "Pub Grub",
+        "locationPrice": "$$",
+        "address": "721 Grand Ave, San Diego, CA 92109",
+        "geolocation":{
+            "lat": "32.794258",
+            "long": "-117.255257"
+        },
+        "imageSrc": "https://www.pbalehouse.com/wp-content/uploads/2017/02/PB-Alehouse_outside-1280x853.jpg",
+        "insta_link": "https://www.instagram.com/pb_alehouse/"
+    },
+    {
+        "id":"011",
+        "locationName": "Ketch Grill and Taps",
+        "neighborhood": "Point Loma",
+        "locationType": "Restaurant",
+        "cuisine": "Local Meat & Seafood",
+        "locationPrice": "$$$",
+        "address": "2614 Shelter Island Dr, San Diego, CA 92106",
+        "geolocation":{
+            "lat": "32.794258",
+            "long": "-117.255257"
+        },
+        "imageSrc": "http://ketchgrillandtaps.com/wp-content/uploads/sites/3/2018/10/IMG_0002__Web.jpg",
+        "insta_link": "https://www.instagram.com/ketchgrillandtaps/"
+    },
+    {
+        "id":"012",
+        "locationName": "Pure Project",
+        "neighborhood": "Bankers Hill",
+        "locationType": "Restaurant",
+        "cuisine": "No Food",
+        "locationPrice": "$$",
+        "address": "2865 Fifth Ave, San Diego, CA 92103",
+        "geolocation":{
+            "lat": "32.735239",
+            "long": "-117.160054"
+        },
+        "imageSrc": "https://www.purebrewing.org/wp-content/uploads/2019/05/DSC05578.jpg",
+        "insta_link": "https://www.instagram.com/pureatthepark/"
+    },
+    {
+        "id":"013",
+        "locationName": "Savage Wood Brewing",
+        "neighborhood": "Scripps Ranch",
+        "locationType": "Brewery",
+        "cuisine": "Hot Dogs",
+        "locationPrice": "$",
+        "address": "9879 Hibert St suite f, San Diego, CA 92131",
+        "geolocation":{
+            "lat": "32.91326",
+            "long": "-117.112779"
+        },
+        "imageSrc": "https://i0.wp.com/savagewoodbrewing.com/wp-content/uploads/2020/01/Savage_Wood_Brewing-79-scaled.jpg?resize=1024%2C683&ssl=1",
+        "insta_link": "https://www.instagram.com/savagewoodbrewing/"
+    },
+    {
+        "id":"014",
+        "locationName": "NOVO Brazil Brewing",
+        "neighborhood": "Eastlake",
+        "locationType": "Brew Pub",
+        "cuisine": "Brazilian Pub Grub",
+        "locationPrice": "$$",
+        "address": "901 Lane Ave #100, Chula Vista, CA 91914",
+        "geolocation":{
+            "lat": "32.652016",
+            "long": "-116.961418"
+        },
+        "imageSrc": "https://media.sandiegoreader.com/img/photos/2019/11/27/novo_otay_web_t670.jpg?b3f6a5d7692ccc373d56e40cf708e3fa67d9af9d",
+        "insta_link": "https://www.instagram.com/novobrazil/"
+    },
+    {
+        "id":"015",
+        "locationName": "Wild Barrel Brewing",
+        "neighborhood": "San Marcos",
+        "locationType": "Tasting Room",
+        "cuisine": "Food Trucks",
+        "locationPrice": "$",
+        "address": "692 Rancheros Dr, San Marcos, CA 92069",
+        "geolocation":{
+            "lat": "33.140147",
+            "long": "-117.145759"
+        },
+        "imageSrc": "https://wildbarrelbrewing.com/images/OwnerPic.jpg",
+        "insta_link": "https://www.instagram.com/wildbarrelbrewing/"
     }
 ]
 
