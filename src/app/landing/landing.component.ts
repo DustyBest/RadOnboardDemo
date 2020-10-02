@@ -11,7 +11,8 @@ export class LandingComponent implements OnInit {
   
   mockVendors: any = (mockVendors as any).default;
   value = 'Search';
-  name = 'User';
+  name;
+  isLoggedIn;
 
   getName(){
     // Currently a workaround. Empty UserService returns a Srting Constructor and not a String.
@@ -19,7 +20,7 @@ export class LandingComponent implements OnInit {
     if(this.userService.currentUser.firstName.toString().split(' ').length === 1){
       this.name = this.userService.currentUser.firstName.toString()
     } else {
-      this.name = "User"
+      this.name = "Potential"
     }
   }
 

@@ -17,19 +17,11 @@ export class OnboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.view = "brewPreferences"
-    // this.intakeService.newUser = 
-    // {
-    //   value: {
-    //     brewPreferences: "",
-    //     winePreferences: "",
-    //     foodPreferences: "",
-    //     occasionPreferences: ""
-    //   } 
-    // };
+    this.intakeService.loggedIn.next(false);
   }
   skip(skipFrom, skipTo){
     this.intakeService.newUser.userPreferences[skipFrom] = '';
     this.view = skipTo
-    console.log(this.intakeService.newUser.userPreferences)
+    // console.log(this.intakeService.newUser.userPreferences)
   }
 }

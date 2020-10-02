@@ -8,7 +8,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class IntakeService {
 
-  public loggedIn: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  public loggedIn: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(true);
 
   get isLoggedIn() {
     return this.loggedIn.asObservable();
@@ -27,9 +27,7 @@ export class IntakeService {
   };
   
 
-  // sayHi(){
-  //   console.log('hi')
-  // }
+
   updateBrew(brew){
     this.newUser.userPreferences.brewPreferences = [brew];
   }
@@ -47,6 +45,7 @@ export class IntakeService {
   onSubmit(){
     // console.log(this.loggedIn)
     this.loggedIn.next(true);
+    // sessionStorage.setItem("loggedIn", "true")
     // console.log(this.loggedIn)
     this.userService.currentUser = this.newUser
     // console.log(this.userService.currentUser)

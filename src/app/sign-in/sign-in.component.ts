@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IntakeService } from '../onboard/intake.service';
+
 
 @Component({
   selector: 'app-sign-in',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInComponent implements OnInit {
 
-  constructor() { }
+  constructor(private intakeService: IntakeService) { }
 
   ngOnInit(): void {
+    this.intakeService.loggedIn.next(false);
   }
 
 }

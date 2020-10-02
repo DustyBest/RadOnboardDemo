@@ -40,7 +40,7 @@ export class ProfileComponent implements OnInit {
 
   options = this.profileService.preferenceOptions
 
-  brewPrefsChecked:boolean = true
+  brewPrefsChecked:boolean = false
   winePrefsChecked:boolean = false
   foodPrefsChecked:boolean = false
   occasionPrefsChecked:boolean = false

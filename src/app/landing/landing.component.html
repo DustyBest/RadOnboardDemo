@@ -15,7 +15,8 @@
     </div>
 
     <div class="sub-head">
-        <h2>{{name}}'s Matches</h2>
+        <h2 *ngIf="this.name !== 'Potential'">{{name}}'s Matches</h2>
+        <h2 *ngIf="this.name === 'Potential'">{{name}} Matches</h2>
     </div>
 
     <app-vendor-cards></app-vendor-cards>
