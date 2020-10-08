@@ -17,6 +17,7 @@ export class ProfileComponent implements OnInit {
       occasionPreferences:[]
     }
   }
+  name;
 
   preferenceOptions = {
     brewPreferences:["light", "amber", "dark", "pisners", "stouts", "sours", "kombucha", "lagers", 
@@ -49,10 +50,21 @@ export class ProfileComponent implements OnInit {
     console.table(this.currentUser.preferences)
   }
 
+  getName(){
+    // Currently a workaround. Empty UserService returns a Srting Constructor and not a String.
+    // If no name has been passed to the UserService I'd like the this.name to default to "User".
+    if(this.userService.currentUser.firstName.toString().split(' ').length === 1){
+      this.name = this.userService.currentUser.firstName.toString()
+    } else {
+      this.name = "User"
+    }
+  }
+
   constructor(public profileService: ProfileService, public userService: UserService) { }
 
   ngOnInit(): void {
     console.log(this.currentUser)
+    this.getName()
     this.currentUser.preferences = this.userService.currentUser.userPreferences;
   }
 

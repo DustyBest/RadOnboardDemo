@@ -1,12 +1,16 @@
 <div class="profile-container">
     <img class="logo" src="../../assets/logos/Logo-Full-Color.png" routerLink="../landing">
     <img class="profile_image" src="../../assets/image/mock-profile-image.png">
+    <h2 class='userName'>{{name}}</h2>
 
     <div class="preferenceWrapper">
 
-      <div>
-        <mat-slide-toggle class="preferenceToggle" [(ngModel)]="brewPrefsChecked"><strong>Brew Preferences</strong></mat-slide-toggle>
-      
+      <div class='preference'>
+        <div class='toggleLabel'>
+         <strong>Brew Preferences</strong>
+         <mat-slide-toggle class="preferenceToggle" [(ngModel)]="brewPrefsChecked"></mat-slide-toggle>
+        </div>
+
         <mat-button-toggle-group class="preferenceGroup" #brewPreferences="matButtonToggleGroup" multiple *ngIf="this.brewPrefsChecked">
           <mat-button-toggle *ngFor="let brew of this.preferenceOptions.brewPreferences" 
           (change)="this.addOrRemove(this.currentUser.preferences.brewPreferences, brew)"
@@ -15,9 +19,12 @@
         </mat-button-toggle-group>
       </div>
 
-      <div>
-        <mat-slide-toggle class="preferenceToggle" [(ngModel)]="winePrefsChecked"><strong>Wine Preferences</strong></mat-slide-toggle>
-      
+      <div class='preference'>
+        <div class='toggleLabel'>
+          <strong>Wine Preferences</strong>
+          <mat-slide-toggle class="preferenceToggle" [(ngModel)]="winePrefsChecked"></mat-slide-toggle>
+        </div>
+
         <mat-button-toggle-group class="preferenceGroup" #winePreferences="matButtonToggleGroup" multiple *ngIf="this.winePrefsChecked">
           <mat-button-toggle *ngFor="let wine of this.preferenceOptions.winePreferences" 
           (change)="this.addOrRemove(this.currentUser.preferences.winePreferences, wine)"
@@ -25,10 +32,14 @@
           {{wine}}</mat-button-toggle>
         </mat-button-toggle-group>
       </div>
-
-      <div>
-        <mat-slide-toggle class="preferenceToggle" [(ngModel)]="foodPrefsChecked"><strong>Food Preferences</strong></mat-slide-toggle>
       
+
+      <div class='preference'>
+        <div class='toggleLabel'>
+          <strong>Food Preferences</strong>
+          <mat-slide-toggle class="preferenceToggle" [(ngModel)]="foodPrefsChecked"></mat-slide-toggle>
+        </div>
+
         <mat-button-toggle-group class="preferenceGroup" #foodPreferences="matButtonToggleGroup" multiple *ngIf="this.foodPrefsChecked">
           <mat-button-toggle *ngFor="let food of this.preferenceOptions.foodPreferences" 
           (change)="this.addOrRemove(this.currentUser.preferences.foodPreferences, food)"
@@ -37,9 +48,12 @@
         </mat-button-toggle-group>
       </div>
 
-      <div>
-        <mat-slide-toggle class="preferenceToggle" [(ngModel)]="occasionPrefsChecked"><strong>Occasion Preferences</strong></mat-slide-toggle>
-      
+      <div class='preference'>
+        <div class='toggleLabel'>
+          <strong>Occasion Preferences</strong>
+          <mat-slide-toggle class="preferenceToggle" [(ngModel)]="occasionPrefsChecked"></mat-slide-toggle>
+        </div>
+        
         <mat-button-toggle-group class="preferenceGroup" #occasionPreferences="matButtonToggleGroup" multiple *ngIf="this.occasionPrefsChecked">
           <mat-button-toggle *ngFor="let occasion of this.preferenceOptions.occasionPreferences" 
           (change)="this.addOrRemove(this.currentUser.preferences.occasionPreferences, occasion)"
