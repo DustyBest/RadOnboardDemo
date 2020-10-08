@@ -3,8 +3,12 @@
     max-width: 450px;
 }
 .img-container {
-    display: flex;
     height: 200px;
+}
+.icon {
+    position: absolute;
+    top: -60px;
+    right: 0px;
 }
 .mat-card-image {
     max-height: 325px;
@@ -15,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    position: relative;
 }
 
 mat-card-content.name {

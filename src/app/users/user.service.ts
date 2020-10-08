@@ -16,7 +16,8 @@ export class UserService {
       winePreferences:[],
       foodPreferences:[],
       occasionPreferences:[]
-    }
+    },
+    favorites:[]
 
   }
 

@@ -15,15 +15,18 @@ export class IntakeService {
   }
 
   newUser:any = { 
-    firstName:String,
-    lastName:String,
-    dob:Date,
+    id: Number,
+    firstName: String,
+    lastName: String,
+    dob: Date,
+    password: String,
     userPreferences: {
       brewPreferences:[],
       winePreferences:[],
       foodPreferences:[],
       occasionPreferences:[]
-    } 
+    },
+    favorites:[]
   };
   
 

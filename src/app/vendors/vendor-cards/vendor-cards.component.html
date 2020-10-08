@@ -1,10 +1,14 @@
 <mat-card class="vendor-card" *ngFor="let vendor of selectedVendors">
     <div class=".img-container">
       <img mat-card-image src={{vendor.imageSrc}} alt="Photo of {{vendor.locationName}}">
+
     </div>
     <mat-card-content class="name" (click)="onSelect(vendor)">
+      <mat-icon class="icon" [ngStyle]="{'color':'white'}" aria-label="Example home icon">favorite_border</mat-icon>
+
       <h2><Strong>{{vendor.locationName}}</Strong></h2>
       <label>{{ vendor.neighborhood }}</label>
+
     </mat-card-content>
     <mat-card-content class="info">
       <p>{{vendor.locationType}} &bull; {{vendor.cuisine}} &bull; {{vendor.locationPrice}}<br>

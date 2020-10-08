@@ -63,7 +63,7 @@ export class ProfileComponent implements OnInit {
   constructor(public profileService: ProfileService, public userService: UserService) { }
 
   ngOnInit(): void {
-    console.log(this.currentUser)
+    console.log(this.userService.currentUser)
     this.getName()
     this.currentUser.preferences = this.userService.currentUser.userPreferences;
   }

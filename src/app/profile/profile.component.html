@@ -1,7 +1,11 @@
 <div class="profile-container">
     <img class="logo" src="../../assets/logos/Logo-Full-Color.png" routerLink="../landing">
     <img class="profile_image" src="../../assets/image/mock-profile-image.png">
-    <h2 class='userName'>{{name}}</h2>
+    
+    <div class=userNameWrap>
+      <h2 class='userName'>{{name}}</h2>
+      <img class='png_icon' src="../../assets/icons/iconfinder_instagram_f_1217086.png" alt="instagram icon">
+    </div>
 
     <div class="preferenceWrapper">
 
@@ -53,7 +57,7 @@
           <strong>Occasion Preferences</strong>
           <mat-slide-toggle class="preferenceToggle" [(ngModel)]="occasionPrefsChecked"></mat-slide-toggle>
         </div>
-        
+
         <mat-button-toggle-group class="preferenceGroup" #occasionPreferences="matButtonToggleGroup" multiple *ngIf="this.occasionPrefsChecked">
           <mat-button-toggle *ngFor="let occasion of this.preferenceOptions.occasionPreferences" 
           (change)="this.addOrRemove(this.currentUser.preferences.occasionPreferences, occasion)"
