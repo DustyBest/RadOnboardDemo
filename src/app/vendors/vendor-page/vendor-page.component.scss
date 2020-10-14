@@ -44,6 +44,12 @@ html, body {
   max-width: 450px;
 }
 
+.icon {
+  position: absolute;
+  top: -40px;
+  right: 0px;
+}
+
 .mat-card-image {
   max-height: 325px;
   object-fit: cover;
@@ -53,6 +59,7 @@ html, body {
 }
 
 .name {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: baseline;

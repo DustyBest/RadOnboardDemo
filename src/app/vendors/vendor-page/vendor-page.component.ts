@@ -3,8 +3,7 @@ import { environment } from '../../../environments/environment';
 import * as L from 'leaflet';
 import { ActivatedRoute } from '@angular/router';
 import * as mockVendors from '../mock-vendors.json';
-// import { Router } from '@angular/router';
-// import { Location } from '@angular/common';
+import { UserService } from '../../users/user.service';
 
 
 let apiToken = environment.MAPBOX_API_KEY;
@@ -34,7 +33,17 @@ export class VendorPageComponent implements OnInit {
   vendorId;
   currentVendor;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, public userService:UserService) { }
+
+  toggleFavorite() {
+    // console.log(this.userService.currentUser.favorites)
+    if(!this.userService.currentUser.favorites.includes(this.currentVendor.locationName)){
+      this.userService.currentUser.favorites.push(this.currentVendor.locationName)
+    } else {
+      this.userService.currentUser.favorites = this.userService.currentUser.favorites.filter(vendor => vendor != this.currentVendor.locationName)
+    }
+    console.log(this.userService.currentUser.favorites)
+  }
 
   ngOnInit(): void {
 

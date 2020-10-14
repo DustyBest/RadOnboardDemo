@@ -17,7 +17,7 @@ export class UserService {
       foodPreferences:[],
       occasionPreferences:[]
     },
-    favorites:[]
+    favorites:["Mother's Saloon", "Tiny's Tavern"]
 
   }
 
