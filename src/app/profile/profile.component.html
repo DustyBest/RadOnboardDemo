@@ -65,6 +65,14 @@
           {{occasion}}</mat-button-toggle>
         </mat-button-toggle-group>
       </div>
+
+      <div class='favoritesWrapper'>
+        <h2 class="favoriteLabel">Favorites</h2>
+        <p class="userName" *ngIf="this.userService.currentUser.favorites.length === 0">Tap the heart on some favorite places to see them here!</p>
+        <div class="favorites">
+          <label class="favorite" *ngFor="let favorite of this.userService.currentUser.favorites">{{favorite}}<span class="xSpan" (click)="this.toggleFavorite(favorite)">x</span></label>
+        </div>
+      </div>
     </div>
 
 </div>

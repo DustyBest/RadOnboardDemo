@@ -60,6 +60,16 @@ export class ProfileComponent implements OnInit {
     }
   }
 
+  toggleFavorite(favorite) {
+    // console.log(this.userService.currentUser.favorites)
+    if(!this.userService.currentUser.favorites.includes(favorite)){
+      this.userService.currentUser.favorites.push(favorite)
+    } else {
+      this.userService.currentUser.favorites = this.userService.currentUser.favorites.filter(vendor => vendor != favorite)
+    }
+    console.log(this.userService.currentUser.favorites)
+  }
+
   constructor(public profileService: ProfileService, public userService: UserService) { }
 
   ngOnInit(): void {
